@@ -1,22 +1,15 @@
 //#include <iostream>
-//#include <cstdio>
-//#include <cmath>
 //using namespace std;
-//
 //int gcd(int a, int b)
 //{
-//	return a%b == 0 ? b : gcd(b, a%b);
+//	if (b == 0)return a;
+//	return gcd(b, a%b);
 //}
-//
-//int main()
-//{
-//	int a, b;
-//	cin >> a >> b;
-//
-//	int temp = gcd(a, b);
-//
-//	cout << (a / temp)*b;  //最小公倍数
-//
-////	system("pause");
+//int main() {
+//	int n, m;
+//	while (cin >> n >> m)
+//	{
+//		cout << n*m / gcd(n, m) << endl;
+//	}
 //	return 0;
 //}
