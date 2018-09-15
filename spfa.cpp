@@ -1,4 +1,4 @@
-ï»¿//#include <iostream>
+//#include <iostream>
 //#include <vector>
 //#include <queue>
 //#include <cstring>
@@ -12,7 +12,7 @@
 //
 //vector<node> v[100005];
 //queue<int> q;
-//bool isQueue[100005];//æ˜¯å¦åœ¨é˜Ÿå†…
+//bool isQueue[100005];//ÊÇ·ñÔÚ¶ÓÄÚ
 //int dis[100005];
 //
 //void init()
@@ -30,16 +30,16 @@
 //		q.pop();
 //		isQueue[now] = 0;
 //
-//		//éå†å½“å‰ç»“ç‚¹çš„è¾¹
-//		for (register int i = 0; i < v[now].size(); i++)
+//		//±éÀúµ±Ç°½áµãµÄ±ß
+//		for (int i = 0; i < v[now].size(); i++)
 //		{
-//			//edgeæ˜¯å½“å‰ç»“ç‚¹éå†çš„è¾¹
-//			//nowåˆ™æ˜¯å½“å‰ç»“ç‚¹
+//			//edgeÊÇµ±Ç°½áµã±éÀúµÄ±ß
+//			//nowÔòÊÇµ±Ç°½áµã
 //			node edge = v[now][i];
-//			if (max(edge.value, dis[now]) < dis[edge.to])
+//			if (dis[now] + edge.value < dis[edge.to])
 //			{
-//				dis[edge.to] = max(edge.value, dis[now]);
-//				//åˆ¤æ–­æ˜¯å¦åœ¨é˜Ÿé‡Œé¢ï¼Œä¸åœ¨åˆ™ç»§ç»­å…¥é˜Ÿ
+//				dis[edge.to] = dis[now] + edge.value;
+//				//ÅĞ¶ÏÊÇ·ñÔÚ¶ÓÀïÃæ£¬²»ÔÚÔò¼ÌĞøÈë¶Ó
 //				if (!isQueue[edge.to])
 //				{
 //					q.push(edge.to);
@@ -54,21 +54,18 @@
 //{
 //	int n, m;
 //	cin >> n >> m;
-//	for (register int i = 0; i < m; i++)
+//	for (int i = 0; i < m; i++)
 //	{
 //		node edge;
-//		int x, y, z;
-//		cin >> x >> y >> z;
-//		edge.to = y;
-//		edge.value = z;
+//		int x;
+//		cin >> x;
+//		cin >> edge.to >> edge.value;
 //		v[x].push_back(edge);
-//		edge.to = x;
-//		edge.value = z;
-//		v[y].push_back(edge);
 //	}
 //	init();
 //	spfa();
-//	cout << dis[n] << endl;
-//	//system("pause");
+//	for (int i = 1; i <= n; i++)
+//		cout << dis[i] << ' ';
+//	system("pause");
 //	return 0;
 //}

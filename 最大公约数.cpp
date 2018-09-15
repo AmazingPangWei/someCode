@@ -9,7 +9,7 @@
 //int main()
 //{
 //
-//	cout << gcd(7, 16) << endl;
+//	cout << gcd(8, 16) << endl;
 //	system("pause");
 //	return 0;
 //}

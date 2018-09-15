@@ -1,4 +1,5 @@
-//
+//#include <iostream>
+//using namespace std;
 //int tree[100];
 //int n;//Êý×éÊý
 //int lowbit(int t)
@@ -16,4 +17,17 @@
 //	for (int i = x;i>0;i -= lowbit(i))
 //		ans += tree[i];
 //	return ans;
+//}
+//
+//int main()
+//{
+//	cin >> n;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		add(i, i);
+//	}
+//	add(1, 2);
+//	cout << getsum(3) << endl;
+//	system("pause");
+//	return 0;
 //}

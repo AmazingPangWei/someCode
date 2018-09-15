@@ -1,5 +1,5 @@
-//http://blog.csdn.net/dark_scope/article/details/8880547/
-
+////http://blog.csdn.net/dark_scope/article/details/8880547/
+//
 //bool find(int x) {
 //	int i, j;
 //	for (j = 1;j <= m;j++) {    //É¨ÃèÃ¿¸öÃÃ×Ó  

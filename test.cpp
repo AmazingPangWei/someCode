@@ -1,45 +1,22 @@
 //#include <iostream>
 //#include <string>
 //#include <algorithm>
+//#include <cstring>
+//#include <list>
 //using namespace std;
 //
-//struct goods
-//{
-//	string name;
-//	int price;
-//};
-//
-//bool comp(goods s1, goods s2)
-//{
-//	if (s1.price > s2.price)
-//		return true;
-//	else if (s1.price < s2.price)
-//		return false;
-//	if (s1.name > s2.name)
-//		return true;
-//	return false;
-//}
-//
+//list<int> q;
 //int main()
 //{
-//	int T;
-//	cin >> T;
-//	int time = 1;
-//	while (T + 1 != time)
+//	int n,k;
+//	for (int i = 0; i < 10; i++)
 //	{
-//		int N;
-//		cin >> N;
-//		goods s[1200];
-//		for (int i = 0; i < N; i++)
-//		{
-//			cin >> s[i].name >> s[i].price;
-//		}
-//		int n;
-//		cin >> n;
-//		sort(s, s + N, comp);
-//		cout << '#' << time << ": " << s[n - 1].name << ' ' << s[n - 1].price << endl;
-//		time++;
+//		q.push_back(i+1);
 //	}
+//	//q.insert(q.end(), 20);
+//	cout << *(--q.end()) << endl;
+//	//for (list<int>::iterator i = q.begin(); i != q.end(); i++)
+//	//	cout << *i << endl;
 //	system("pause");
 //	return 0;
 //}
